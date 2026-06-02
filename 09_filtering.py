@@ -12,3 +12,4 @@ print("Adults:", adults) # Print the filtered array of adults
 #>>>>>>>>> ARRAY IS NOW FLATENED TO 1D ARRAY OF ADULTS <<<<<<<<<<<<<
 senior_citizens = ages[ages >= 65] # Filter ages greater than or equal to 65 (boolean indexing)
 print("Senior Citizens:", senior_citizens) # Print the filtered array of senior citizens
+seniors = np.where((ages >= 65) & (ages < 100)) # Filter senior citizens less than 100 (boolean indexing)   keeps shape but SLOOWWW
