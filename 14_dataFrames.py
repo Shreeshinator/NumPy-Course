@@ -27,3 +27,5 @@ print()
 new_row = pd.DataFrame({'Name': ['Sandy'], 'Age': [28], 'City': ['Bikini Bottom'], 'Salary': [60000]}, index=['Emp.4'])
 df = pd.concat([df, new_row])
 print(df)
+print()
+print(df['Salary'])  # Access a column by name
